@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">LibSignUp</string>
+    <string name="already_have_an_account_sign_in">Already have an account? <font color='#003663'><u><b>Sign In</b></u></font></string>
+
+    <string name="email_empty_error">Email address is required</string>
+    <string name="email_invalid_error">Invalid Email address</string>
+    <string name="password_empty_error">Password is required</string>
+    <string name="password_invalid_error">Password must contain 8 alphanumeric characters with 1 capital letter.</string>
+    <string name="no_appointments_found">No Appointments Found</string>
+    <string name="empty_name_error">Please Enter Full Name</string>
+    <string name="password_confirm_matching_error">Password and Confirm Password is not same</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="email_address">Email address</string>
+    <string name="don_t_have_an_account_sign_up">Don’t have an account? <font color='#003663'><u><b>Sign Up</b></u></font></string>
+      <string name="default_web_client_id">106647938818-70gu1h5svep0d4vp4f1tuberi88jl0aj.apps.googleusercontent.com</string>
+
+
+</resources>
