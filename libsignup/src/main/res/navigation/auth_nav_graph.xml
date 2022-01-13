@@ -2,7 +2,8 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/auth_nav_graph">
+    android:id="@+id/auth_nav_graph"
+    app:startDestination="@id/registerMobileFragment">
 
     <fragment
         android:id="@+id/signUpFragment"
@@ -15,6 +16,11 @@
         <action
             android:id="@+id/action_signUpFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_registerMobileFragment2"
+            app:destination="@id/registerMobileFragment" />
+
+
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -23,9 +29,35 @@
         <action
             android:id="@+id/action_loginFragment_to_forgotPasswordBottomSheet"
             app:destination="@id/forgotPasswordBottomSheet" />
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
     </fragment>
     <dialog
         android:id="@+id/forgotPasswordBottomSheet"
         android:name="com.wama.libsignup.utility.ForgotPasswordBottomSheet"
         android:label="ForgotPasswordBottomSheet" />
+    <fragment
+        android:id="@+id/registerMobileFragment"
+        android:name="com.wama.libsignup.utility.RegisterMobileFragment"
+        android:label="RegisterMobileFragment" >
+        <action
+            android:id="@+id/action_registerMobileFragment_to_otpFragment"
+            app:destination="@id/otpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpFragment"
+        android:name="com.wama.libsignup.utility.OtpFragment"
+        android:label="OtpFragment" >
+        <action
+            android:id="@+id/action_otpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.wama.libsignup.utility.ProfileFragment"
+        android:label="ProfileFragment" />
 </navigation>

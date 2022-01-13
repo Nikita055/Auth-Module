@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/login_background">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="0dp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="@string/enter_your_mobile_number"
+        android:textAlignment="center"
+        android:textColor="@color/dark_blue_sec"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="0dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/we_will_send_you_4_digit_otp_on_nyour_mobile_number"
+        android:textAlignment="center"
+        android:textColor="@color/dark_blue_65"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/country_code_ly"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="64dp"
+        android:textColorHint="@color/dark_blue_50"
+        app:boxStrokeColor="#C2C4CB"
+        app:boxStrokeWidth="1dp"
+        app:errorEnabled="false"
+        app:errorTextColor="@color/red_button"
+        app:hintEnabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView6">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/country_code_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="phone"
+            android:drawableEnd="@drawable/icons8_back_1"
+            android:maxLines="1"
+            android:digits="0123456789"
+            android:focusable="false"
+            android:padding="14dp"
+            android:text="+91"
+            android:textColor="@color/dark_grey" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mobile_input_ly"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="30dp"
+        android:elevation="10dp"
+        app:errorTextColor="@android:color/white"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/country_code_ly"
+        app:layout_constraintTop_toBottomOf="@id/textView6">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mobile_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:digits="0123456789"
+            android:padding="14dp"
+            android:hint="@string/enter_mobile_number"
+            android:textColor="@color/dark_grey"
+            android:textColorHint="@color/dark_grey" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/send_otp_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="28dp"
+        android:text="@string/get_otp"
+        style="@style/GrayButtonStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobile_input_ly" />
+
+    <ProgressBar
+        android:id="@+id/mobile_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/back_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow___left" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -69,14 +69,14 @@ class LoginFragment : Fragment(){
             .build()
 
         googleSignInClient = GoogleSignIn.getClient(activity, gso)
-        auth = Firebase.auth
+//        auth = Firebase.auth
 
         binding.signInBtn.setOnClickListener {
             checkEmailPassword()
         }
 
         binding.signUpTv.setOnClickListener {
-            navController!!.navigate(R.id.action_signUpFragment_to_loginFragment)
+            navController!!.navigate(R.id.action_loginFragment_to_profileFragment)
         }
 
         binding.googleCard.setOnClickListener {
@@ -87,8 +87,12 @@ class LoginFragment : Fragment(){
             facebookLogin()
         }
 
+        binding.signInBtn.setOnClickListener {
+            navController!!.navigate(R.id.action_loginFragment_to_profileFragment)
+        }
+
         binding.forgotTv.setOnClickListener {
-            forgotPasswordBottomSheet = ForgotPasswordBottomSheet()
+            forgotPasswordBottomSheet =  ForgotPasswordBottomSheet()
             forgotPasswordBottomSheet!!.show(requireActivity().supportFragmentManager, "ChangePassword")
            // navController!!.navigate(R.id.action_loginFragment_to_forgotPasswordBottomSheet)
         }

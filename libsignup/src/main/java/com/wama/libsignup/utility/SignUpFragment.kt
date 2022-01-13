@@ -70,6 +70,7 @@ class SignUpFragment : Fragment() {
             return
         } else {
             Toast.makeText(context,"SignUp Successful",Toast.LENGTH_SHORT).show()
+            navController!!.navigate(R.id.action_signUpFragment_to_registerMobileFragment2)
         }
     }
 

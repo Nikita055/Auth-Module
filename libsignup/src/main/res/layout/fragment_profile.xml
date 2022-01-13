@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/divider_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_top_rl"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView10"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ellipse_4"
+            app:layout_constraintBottom_toTopOf="@+id/edit_imgVw"
+            app:layout_constraintEnd_toEndOf="@+id/edit_imgVw" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/edit_imgVw"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/imageView10"
+            android:layout_alignEnd="@+id/imageView10"
+            android:layout_marginTop="-6dp"
+            android:layout_marginEnd="-5dp"
+            android:background="@drawable/ellipse_749"
+            android:padding="5dp"
+            android:src="@drawable/edit_white" />
+
+        <TextView
+            android:id="@+id/name_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="18dp"
+            android:layout_toEndOf="@id/imageView10"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="John Deo"
+            android:textColor="@color/dark_blue_sec"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/personal_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:text="Personal Details"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/dark_grey"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_top_rl" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:id="@+id/vehicle_detail_cv"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personal_title_tv" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="20dp"
+                app:boxStrokeWidth="1dp"
+                android:id="@+id/vehicle_name_tel"
+                app:boxStrokeColor="@color/gray_20"
+                android:textColorHint="@color/dark_blue_65"
+                app:errorEnabled="false"
+                app:errorTextColor="@color/red_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email_et"
+                    android:hint="@string/email_id"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:imeOptions="actionNext"
+                    style="@style/Widget.App.TextInputLayout"
+                    android:textColor="@color/dark_blue_sec"
+                    android:textSize="16sp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/vehicle_color_tel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:textColorHint="@color/dark_blue_65"
+                app:boxStrokeColor="@color/gray_20"
+                app:boxStrokeWidth="1dp"
+                app:errorEnabled="false"
+                app:errorTextColor="@color/red_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vehicle_name_tel">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/contactNumber_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/contact_number"
+                    android:maxLines="1"
+                    android:maxLength="10"
+                    android:digits="0123456789"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:textColor="@color/dark_blue_sec"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/vehicle_number_tel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:textColorHint="@color/dark_blue_65"
+                app:boxStrokeColor="@color/gray_20"
+                app:boxStrokeWidth="1dp"
+                app:errorEnabled="false"
+                app:errorTextColor="@color/red_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vehicle_color_tel">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/address_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Address"
+                    android:inputType="textPostalAddress"
+                    android:imeOptions="actionDone"
+                    android:textColor="@color/dark_blue_sec"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save_btn"
+        style="@style/ButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="20dp"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vehicle_detail_cv" />
+
+
+   <!-- <ProgressBar
+        android:id="@+id/progress_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primary_yellow"
+        android:visibility="visible"
+        android:elevation="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

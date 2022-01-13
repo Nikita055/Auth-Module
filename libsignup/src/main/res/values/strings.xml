@@ -1,25 +1,112 @@
 <resources>
     <string name="app_name">LibSignUp</string>
+         <string name="default_web_client_id">106647938818-70gu1h5svep0d4vp4f1tuberi88jl0aj.apps.googleusercontent.com</string>
+
+    <string name="facebook_app_id">945100149425099</string>
+    <string name="fb_login_protocol_scheme">fb945100149425099</string>
+
+    <string name="splash_text"><![CDATA[We wash your cars,\n trucks, exotics, boats & more…]]></string>
+    <string name="cancel_appointment">Cancel Appointment</string>
+    <string name="cancellation_policy">Cancellation Policy</string>
+    <string name="we_will_assign_our_executive_soon">We will assign our executive soon</string>
+    <string name="re_book">Re-Book</string>
+    <string name="before_service">Before Service</string>
+    <string name="after_service">After Service</string>
+    <string name="contact_number">Contact number</string>
+    <string name="email_address">Email address</string>
+    <string name="cancel">Cancel</string>
+    <!--    <string name="change_password">Change Password</string>-->
+    <string name="contact_us">Contact Us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="push_notifications">Push Notifications</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="select_any">Select any</string>
+    <string name="select_one">What are you looking for?</string>
+    <string name="submit">Submit</string>
+    <string name="change_password">Change Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="rate_the_service">Rate the service</string>
+    <string name="how_was_your_experience">How was your experience?</string>
+    <string name="write_your_feedback">Write your feedback</string>
+    <string name="enter_feedback">Enter feedback</string>
+    <string name="home">Home</string>
+    <string name="history">History</string>
+    <string name="profile">Profile</string>
+    <string name="faq_s">FAQ’s</string>
+    <string name="chat_list">Chats</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="schedule">Schedule</string>
+    <string name="schedule_appointment">Schedule Appointment</string>
+    <string name="add_another_vehicle_for_service">Add another vehicle for service</string>
+    <string name="continu">Continue</string>
+    <string name="ok">OK</string>
+    <string name="upcoming">Upcoming Appointment</string>
+    <string name="summary">Summary</string>
+    <string name="type_your_message">Type your message</string>
+    <string name="don_t_have_an_account_sign_up">Don’t have an account? <font color='#003663'><u><b>Sign Up</b></u></font></string>
     <string name="already_have_an_account_sign_in">Already have an account? <font color='#003663'><u><b>Sign In</b></u></font></string>
+    <string name="skip">Skip</string>
+    <string name="add_address">Add Address</string>
+    <string name="add_vehicle_detail">Add Vehicle Detail</string>
+    <string name="vehicle_type">Vehicle Type</string>
+    <string name="label_month">MONTH</string>
+    <string name="label_year">YEAR</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="we_will_send_you_4_digit_otp_on_nyour_mobile_number">We will send you 4 digit OTP on \n your mobile number</string>
+    <string name="enter_your_mobile_number">Enter your mobile number</string>
+    <string name="upload">Upload From</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+
+    <string name="didn_t_received_an_otp_resend">Didn\'t received an OTP? <font color='#003663'><u><b>Resend</b></u></font></string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="we_have_sent_you_4_digit_otp_on_n_your_registered_number">We have sent you 4 digit OTP on \n your registered number</string>
+    <string name="verify_phone">Verify Phone</string>
+
 
     <string name="email_empty_error">Email address is required</string>
     <string name="email_invalid_error">Invalid Email address</string>
     <string name="password_empty_error">Password is required</string>
     <string name="password_invalid_error">Password must contain 8 alphanumeric characters with 1 capital letter.</string>
     <string name="no_appointments_found">No Appointments Found</string>
+
+    //Firebase Push Notification Channel Id
+    <string name="default_notification_channel_id">1001</string>
+
+    <string name="internal_server_error">Internal server error</string>
+    <string name="exception_msg">Something went wrong</string>
+    <string name="no_internet">Please Check Internet Connection</string>
+    <string name="mobile_number">Mobile Number</string>
     <string name="empty_name_error">Please Enter Full Name</string>
     <string name="password_confirm_matching_error">Password and Confirm Password is not same</string>
-    <string name="forgot_password">Forgot Password</string>
-    <string name="email_address">Email address</string>
-    <string name="don_t_have_an_account_sign_up">Don’t have an account? <font color='#003663'><u><b>Sign Up</b></u></font></string>
-      <string name="default_web_client_id">106647938818-70gu1h5svep0d4vp4f1tuberi88jl0aj.apps.googleusercontent.com</string>
 
-    <string name="verify_phone">Verify Phone</string>
-    <string name="didn_t_received_an_otp_resend">Didn\'t received an OTP? <font color='#003663'><u><b>Resend</b></u></font></string>
-    <string name="enter_otp">Enter OTP</string>
-    <string name="we_have_sent_you_4_digit_otp_on_n_your_registered_number">We have sent you 4 digit OTP on \n your registered number</string>
-    <string name="mobile_number">Mobile Number</string>
-    <string name="continu">Continue</string>
+    <string name="denied_title">Allow WashX to access your location</string>
+    <string name="denied_msg">This app uses your location to fetch your home address</string>
+    <string name="google_location">Google Location</string>
+    <string name="vehicle_color">Vehicle Color</string>
+    <string name="vehicle_number">Vehicle Number</string>
+    <string name="vehicle_name">Vehicle Name</string>
+    <string name="book_appointment">Book Appointment</string>
+    <string name="my_vehicles">My Vehicles</string>
+    <string name="service_address">Service Address</string>
+    <string name="no_vehicles_found_add_new">No vehicles found, add new</string>
+    <string name="select_package">Select Package</string>
+    <string name="select_addons">Select Addons</string>
+    <string name="login_chat_login_error">Login to Chat error. Please relogin. </string>
+    <string name="chat_still_joining">You\'re still joining a group chat, please wait a bit</string>
+    <string name="chat_error_send_message">Can\'t send a message, You are not connected to chat</string>
+    <string name="wow_let_s_type_something">Wow, Let’s type something!</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="instruction">Instruction</string>
+    <string name="email_id">Email ID</string>
+    <string name="read_more">Read More</string>
+    <string name="read_less">Read Less</string>
+    <string name="later">Later</string>
+    <string name="reply_label">reply_label</string>
 
 
 </resources>
