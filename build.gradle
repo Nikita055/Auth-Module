@@ -76,13 +76,13 @@ project('libsignup') {
                 groupId = "com.wama.libsignup"
                 artifactId = project.getName()
                 version = currentVersionName
-                // Tell maven to prepare the generated "*.aar" file for publishing
-                artifact("$buildDir/outputs/aar/${project.getName()}-${currentVersionName}-release.aar")
+                // Tell maven to prepare the generated "*.aar" file for publishing // libsignup-debug.aar
+                artifact("$buildDir/outputs/aar/${project.getName()}-debug.aar")
             }
         }
     }
 
 
-    
+
 }
 
