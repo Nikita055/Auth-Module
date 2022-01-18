@@ -19,3 +19,8 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
+
+allprojects {
+    apply plugin: 'maven-publish'
+
+}
